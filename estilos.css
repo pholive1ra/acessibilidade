@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% da altura da viewport */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    flex-grow: 1; /* Ocupa todo o espaço restante na vertical */
+    padding: 20px;
+}
+
+header{
+    width: 100%;
+    background-color: #1eabec; 
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: #1eabec; /* Cor de fundo do rodapé (opcional) */
+    color: black; /* Cor do texto do rodapé (opcional) */
+    padding: 35px; /* Espaçamento interno do rodapé (opcional) */
+    display: flex;
+    align-items: center;
+}
+    
+.logo-imagem{
+    width: 100px; 
+    height: 100px; 
+} 
+
+.container-logo{
+    display: flex;
+    align-items: center;
+} 
+
+.logo-texto{
+    margin-left: 210px;
+}
+    
+.menu li{
+    display: inline-block;
+    margin: 0 10px;
+} 
+
+.menu li a{
+    font-size: 24px;  
+    color: black;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    padding: 0;
+    background-color: #1eabec;
+    border-radius: 20px;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    display: block;
+    margin: 0 10px;
+    padding: 10px 25px;
+}
+
+.service {
+    align-items: center; /* Centralizar verticalmente */
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    background-color: #1eabec;
+    border-radius: 30px;
+    text-align: center;
+    padding: 50px; /* Espaçamento interno da div service */
+    border: 10px solid #ccc; /* Borda para destacar as divs */
+    border-color: black;
+}
+
+.service img {
+    width: 130px;
+    height: auto; /* Largura da imagem (ajuste conforme necessário) */
+    margin-right: 30px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+}
+
+.service h2 {
+    margin-right: 20px;
+    margin-top: 5px; /* Espaço superior reduzido */
+    margin-bottom: 5px; /* Espaço inferior reduzido */
+}
+
+.service p {
+    margin-top: 5px; /* Espaço superior reduzido */
+    margin-bottom: 5px; /* Espaço inferior reduzido */
+}
